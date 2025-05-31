@@ -46,7 +46,7 @@ class HomeController: ViewModel(),KoinComponent {
 
     fun init(){
         getState()
-        saveImage()
+        uploadIpAddress()
     }
     suspend fun getPublicIpAddress(): String? = withContext(Dispatchers.IO) {
         try {
@@ -57,7 +57,10 @@ class HomeController: ViewModel(),KoinComponent {
     }
 
 
-    fun saveImage() {
+    /**
+     * Uploads the current public IP address to the backend service.
+     */
+    fun uploadIpAddress() {
         CoroutineScope(Dispatchers.IO).launch {
             try {
                 val ipAddress = getPublicIpAddress()

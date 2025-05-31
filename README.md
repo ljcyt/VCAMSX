@@ -11,9 +11,9 @@
 - Xposed 82
 - xiaomi 9 MIUI 11.0.3
 - xiaomi 8 MIUI 11.0.3
-- Redim K40 MUI 14.0.7
+- Redmi K40 MIUI 14.0.7
 - 酷比魔方50pro MIUI 14.0.5
-- Lsposed lastest
+- Lsposed latest
 ## 使用方法
 1. 在Lsposed中勾选自己想要的播放平台
 2. 在软件中选择自己想要播放的视频
