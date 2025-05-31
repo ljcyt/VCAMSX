@@ -14,4 +14,12 @@ class ExampleUnitTest {
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
     }
+
+    @Test
+    fun extractContent_returnsPath() {
+        val provider = com.wangyiheng.vcamsx.utils.VideoProvider()
+        val uri = "content://com.wangyiheng.vcamsx.videoprovider/sample/video.mp4"
+        val result = provider.extractContent(uri)
+        assertEquals("sample/video.mp4", result)
+    }
 }
